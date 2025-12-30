@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -15,7 +15,7 @@ struct Node {
     Node<T1, T2>* right;
 
     Node(T1 key, T2 value)
-        : key{key}, value{value} { 
+        : key{ key }, value{ value } {
         left = nullptr;
         right = nullptr;
     }
@@ -30,7 +30,7 @@ struct Node {
 
     T2 get(T1 k) {
         Node<T1, T2>* x = this;
-       
+
         while (x != nullptr) {
             std::int32_t cmp = (k - x->key);
             if (cmp == 0) {
