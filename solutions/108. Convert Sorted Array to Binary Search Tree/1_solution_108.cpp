@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -72,7 +72,7 @@ public:
         mid -= 1;
         vector<int> leftItems = slicing(nums, 0, mid);
         vector<int> rightItems = slicing(nums, (mid + 2), (sizeNums - 1));
-        
+
         root->left = sortedArrayToBST(leftItems);
         root->right = sortedArrayToBST(rightItems);
 
