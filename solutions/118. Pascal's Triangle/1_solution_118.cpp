@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -42,7 +42,7 @@ int main()
 {
     Solution sol;
     vector<vector<int>> triangle = sol.generate(5);
-    
+
     for (const auto& item : triangle) {
         for (const auto& subItem : item) {
             std::cout << subItem << " ";

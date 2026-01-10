@@ -12,7 +12,7 @@ endif()
 project ("leetcode-solutions")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (leetcode-solutions "leetcode-solutions.cpp" "solutions/108. Convert Sorted Array to Binary Search Tree/2_solution_108.cpp")
+add_executable (leetcode-solutions "leetcode-solutions.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET leetcode-solutions PROPERTY CXX_STANDARD 20)
