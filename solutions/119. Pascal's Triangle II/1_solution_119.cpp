@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
@@ -26,7 +26,7 @@ int main()
 {
     Solution sol;
     vector<int> triangle = sol.getRow(30);
-    
+
     for (const auto& item : triangle) {
         std::cout << item << " ";
     }
